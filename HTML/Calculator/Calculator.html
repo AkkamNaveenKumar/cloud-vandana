@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Calculator</h2>
+  <div class="calculator">
+    <input type="text" id="result" disabled>
+    <table>
+      <tr>
+        <td><button onclick="appendNumber(7)">7</button></td>
+        <td><button onclick="appendNumber(8)">8</button></td>
+        <td><button onclick="appendNumber(9)">9</button></td>
+        <td><button onclick="calculate('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber(4)">4</button></td>
+        <td><button onclick="appendNumber(5)">5</button></td>
+        <td><button onclick="appendNumber(6)">6</button></td>
+        <td><button onclick="calculate('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber(1)">1</button></td>
+        <td><button onclick="appendNumber(2)">2</button></td>
+        <td><button onclick="appendNumber(3)">3</button></td>
+        <td><button onclick="calculate('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber(0)">0</button></td>
+        <td><button onclick="appendNumber('.')">.</button></td>
+        <td><button onclick="calculate('%')">%</button></td>
+        <td><button onclick="calculate('+')">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="1"><button onclick="clearInput()">C</button></td>
+        <td colspan="1"><button onclick="compute()">=</button></td> 
+      </tr>
+      
+    </table>
+  </div>
+  <script src="script.js"></script>
+        </fieldset>
+     
+</body>
+</html>
